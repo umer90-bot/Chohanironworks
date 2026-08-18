@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chohan Iron Works | Hyderabad</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <span>⚒</span>
+        CHOHAN <b>IRON WORKS</b>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#products">Products</a>
+        <a href="#calculator">Calculator</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">WELCOME TO</p>
+
+        <h1>CHOHAN<br><span>IRON WORKS</span></h1>
+
+        <p class="hero-text">
+            Premium Iron Doors, Windows, Grills & Custom Iron Work
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#calculator" class="btn primary">Calculate Price</a>
+
+            <a href="https://wa.me/923122636888?text=Assalam-o-Alaikum%20Chohan%20Iron%20Works%2C%20mujhe%20aapke%20iron%20work%20ke%20bare%20mein%20maloomat%20chahiye."
+               class="btn whatsapp"
+               target="_blank">
+                WhatsApp Us
+            </a>
+        </div>
+
+    </div>
+
+    <div class="hero-metal">
+        <div class="metal-ring"></div>
+        <div class="hammer">⚒</div>
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about">
+
+    <div>
+        <p class="section-tag">WHO WE ARE</p>
+
+        <h2>Strong Work.<br><span>Strong Quality.</span></h2>
+
+        <p>
+            Chohan Iron Works provides professional iron fabrication
+            and custom metal work in Hyderabad, Sindh. We specialize
+            in durable and stylish iron doors, windows, grills and
+            customized iron products.
+        </p>
+
+        <a href="#contact" class="btn primary">Contact Us</a>
+    </div>
+
+    <div class="about-card">
+        <div class="card-icon">⚒</div>
+        <h3>QUALITY</h3>
+        <p>Strong material & professional workmanship.</p>
+    </div>
+
+    <div class="about-card">
+        <div class="card-icon">▣</div>
+        <h3>CUSTOM DESIGN</h3>
+        <p>Design your iron work according to your requirements.</p>
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="section">
+
+    <p class="section-tag">WHAT WE DO</p>
+
+    <h2 class="section-title">OUR <span>SERVICES</span></h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <div class="service-icon">🚪</div>
+            <h3>Iron Doors</h3>
+            <p>
+                Strong and stylish iron doors for homes,
+                shops, offices and other buildings.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">▦</div>
+            <h3>Iron Windows</h3>
+            <p>
+                Durable iron windows with custom designs
+                and professional finishing.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">▥</div>
+            <h3>Iron Grills</h3>
+            <p>
+                Security grills with modern and traditional
+                designs.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">⚙</div>
+            <h3>Custom Work</h3>
+            <p>
+                Tell us your idea and we can create a
+                customized iron product for you.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section id="products" class="section dark-section">
+
+    <p class="section-tag">OUR PRODUCTS</p>
+
+    <h2 class="section-title">NEW & <span>USED</span></h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <div class="product-image">🚪</div>
+            <h3>Iron Doors</h3>
+            <p>New & Used</p>
+            <button onclick="selectProduct('Iron Door')">
+                Get Quote
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">▦</div>
+            <h3>Iron Windows</h3>
+            <p>New & Used</p>
+            <button onclick="selectProduct('Iron Window')">
+                Get Quote
+            </button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">▥</div>
+            <h3>Iron Grills</h3>
+            <p>Custom Designs</p>
+            <button onclick="selectProduct('Iron Grill')">
+                Get Quote
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CALCULATOR -->
+<section id="calculator" class="calculator-section">
+
+    <p class="section-tag">PRICE ESTIMATOR</p>
+
+    <h2 class="section-title">IRON <span>CALCULATOR</span></h2>
+
+    <div class="calculator">
+
+        <div class="input-group">
+            <label>Item Type</label>
+
+            <select id="itemType">
+                <option value="Door">Iron Door</option>
+                <option value="Window">Iron Window</option>
+                <option value="Grill">Iron Grill</option>
+                <option value="Custom">Custom Work</option>
+            </select>
+        </div>
+
+
+        <div class="input-row">
+
+            <div class="input-group">
+                <label>Width (ft)</label>
+                <input type="number" id="width" placeholder="Example: 4">
+            </div>
+
+            <div class="input-group">
+                <label>Height (ft)</label>
+                <input type="number" id="height" placeholder="Example: 7">
+            </div>
+
+        </div>
+
+
+        <div class="input-group">
+            <label>Estimated Weight (kg per sq.ft)</label>
+
+            <input type="number"
+                   id="weightRate"
+                   value="5"
+                   placeholder="Example: 5">
+        </div>
+
+
+        <div class="input-group">
+            <label>Iron Rate (Rs per kg)</label>
+
+            <input type="number"
+                   id="ironRate"
+                   value="300"
+                   placeholder="Example: 300">
+        </div>
+
+
+        <button class="calculate-btn" onclick="calculatePrice()">
+            CALCULATE
+        </button>
+
+
+        <div id="result" class="result">
+
+            <h3>ESTIMATED RESULT</h3>
+
+            <p>Area: <strong id="areaResult">0</strong> sq.ft</p>
+
+            <p>Estimated Weight:
+                <strong id="weightResult">0</strong> kg
+            </p>
+
+            <p>Estimated Price:
+                <strong id="priceResult">Rs. 0</strong>
+            </p>
+
+        </div>
+
+        <p class="note">
+            *This calculator provides an estimated price only.
+            Final price may vary according to design, material,
+            labour and finishing.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+
+    <p class="section-tag">OUR WORK</p>
+
+    <h2 class="section-title">PHOTO <span>GALLERY</span></h2>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-box">
+            <span>YOUR PHOTO</span>
+            <small>Add your door photo here</small>
+        </div>
+
+        <div class="gallery-box">
+            <span>YOUR PHOTO</span>
+            <small>Add your grill photo here</small>
+        </div>
+
+        <div class="gallery-box">
+            <span>YOUR PHOTO</span>
+            <small>Add your window photo here</small>
+        </div>
+
+        <div class="gallery-box">
+            <span>YOUR PHOTO</span>
+            <small>Add your custom work photo here</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+
+    <p class="section-tag">GET IN TOUCH</p>
+
+    <h2 class="section-title">CONTACT <span>US</span></h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+            <div>📱</div>
+            <h3>WhatsApp / Phone</h3>
+            <a href="tel:+923122636888">
+                0312-2636888
+            </a>
+        </div>
+
+
+        <div class="contact-card">
+            <div>📍</div>
+            <h3>Our Location</h3>
+            <p>
+                Loha Market,<br>
+                Pakistani Chowk,<br>
+                Hyderabad, Sindh
+            </p>
+        </div>
+
+
+        <div class="contact-card">
+            <div>💬</div>
+            <h3>Quick Message</h3>
+
+            <a class="contact-whatsapp"
+               href="https://wa.me/923122636888"
+               target="_blank">
+                Message on WhatsApp
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        ⚒ CHOHAN IRON WORKS
+    </div>
+
+    <p>
+        Iron Doors • Windows • Grills • Custom Work
+    </p>
+
+    <p class="copyright">
+        © 2026 Chohan Iron Works. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/923122636888"
+   class="floating-whatsapp"
+   target="_blank">
+    💬
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
